@@ -1,0 +1,103 @@
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.security {
+  background-image: url('../images/security.png');
+  background-color: #1f2d47;
+  min-height: 835px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cta {
+  background-image: url('../images/cta1920.png');
+  min-height: 618px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.serviceCard {
+  transition: all ease 0.6s;
+}
+
+.serviceCard .imgContainer {
+  overflow: hidden;
+  transition: all ease 0.6s;
+}
+.serviceCard .imgContainer img {
+  transition: 0.6s all ease;
+}
+.serviceCard:hover .imgContainer img {
+  transition: 0.6s all ease;
+  transform: scale(1.1);
+}
+.serviceCard h3 {
+  transition: 0.6s all ease;
+}
+.serviceCard:hover h3 {
+  color: #2563eb;
+  transition: all ease 0.6s;
+}
+.contact {
+  background-image: url('../images/contactBg1920.png');
+  min-height: 852px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.inner-conatct {
+  min-height: 852px;
+}
+
+#discount {
+  top: -34px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 1600px) {
+  #discount {
+    top: -30px;
+  }
+}
+@media (max-width: 1440px) {
+  .security {
+    background-image: url('../images/securitylaptop.png');
+    min-height: 627px;
+  }
+  .cta {
+    background-image: url('../images/cta1440.png');
+    min-height: 464px;
+  }
+  .contact {
+    background-image: url('../images/contact1440.png');
+    min-height: 639px;
+  }
+  .inner-conatct {
+    min-height: 639px;
+  }
+}
+@media (max-width: 1280px) {
+  .security {
+    background-image: url('../images/securitysmall.png');
+    min-height: 557px;
+    background-size: cover;
+  }
+  .contact {
+    background-position: right center;
+    min-height: 500px;
+  }
+  .inner-conatct {
+    min-height: 500px;
+  }
+}
+@media (max-width: 1024px) {
+  .security {
+    background-position: left center;
+  }
+  #discount {
+    top: -25px;
+  }
+}

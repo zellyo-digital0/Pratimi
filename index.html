@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon  -->
+  <link rel="icon" href="images/favicon.svg" />
+  <title>Pratimi</title>
+  <!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+  <!-- font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Flow Bite  -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwind custom class -->
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+        },
+
+        screens: {
+          sm: "600px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1440px",
+          "3xl": "1500px",
+          "4xl": "1600px",
+          "5xl": "2000px",
+        },
+        extend: {
+          colors: {
+            "landing-900": " #111928",
+            "landing-800": " #1F2D47",
+            "landing-700": " #314872",
+            "landing-600": " #496CAB",
+            "landing-500": " #6281BC",
+            "landing-400": " #7E98C8",
+            "landing-300": " #A9BADA",
+            "landing-200": " #C6D1E7",
+            "landing-100": " #E2E8F3",
+            "landing-50 ": "#F2F6FD",
+          },
+        },
+      },
+    };
+  </script>
+  <!-- custom css  -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-landing-900">
+  <!-- header start here  -->
+  <header>
+    <div class="flex items-center justify-between container 4xl:px-[106px] 3xl:px-[90px] 2xl:px-20 px-5 py-5">
+      <a href="/" class="flex items-center md:space-x-3 space-x-2">
+        <img src="images/favicon.svg" class="3xl:h-9 md:h-8 h-6" alt="Flowbite Logo" />
+        <span
+          class="self-center 3xl:text-3xl md:text-2xl text-lg font-semibold whitespace-nowrap text-white">Pratimi</span>
+      </a>
+      <div class="flex xl:gap-6 gap-2">
+        <button type="button"
+          class="text-white focus:outline-none font-medium rounded-lg xl:text-lg text-sm md:px-5 py-3 px-3 text-center bg-transparent hover:bg-blue-700 transition-all">
+          Влез
+        </button>
+        <button type="button"
+          class="text-white focus:outline-none font-medium rounded-lg xl:text-lg text-sm md:px-5 py-3 px-3 text-center bg-blue-600 hover:bg-blue-700 transition-all">
+          Заяви покана
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- header ends here  -->
+
+  <!-- Main Body start here  -->
+  <main>
+    <!-- hero section start here  -->
+    <section
+      class="container flex flex-col lg:flex-row items-center justify-between 4xl:py-28 2xl:px-20 px-5 lg:py-24 py-10 gap-10">
+      <div class="w-full lg:w-[40%] text-center lg:text-start space-y-3 lg:space-y-6 order-2 lg:order-1">
+        <h1 class="font-bold text-white 3xl:text-[80px] xl:text-6xl lg:text-5xl md:text-4xl text-3xl">
+          Гоните клиенти за документи?
+        </h1>
+        <p class="text-landing-300 font-normal 3xl:text-[26px] lg:text-xl text-base">
+          Автоматизирано събиране на документи за счетоводители и фирми.
+        </p>
+        <div class="flex gap-4 items-center justify-center lg:justify-start">
+          <a href="#"
+            class="text-white focus:outline-none font-medium rounded-lg 3xl:text-2xl xl:text-lg text-sm md:px-5 py-3 px-3 text-center bg-blue-600 hover:bg-blue-700 flex items-center gap-2 transition-all">
+            <span>Заяви покана </span><img src="images/arrow-right-outline.svg" class="w-4" alt="" />
+          </a>
+          <a href="#"
+            class="text-white focus:outline-none font-medium rounded-lg 3xl:text-2xl xl:text-lg text-sm md:px-5 py-3 px-3 text-center bg-landing-800 hover:bg-blue-700 transition-all">
+            Свържи се с нас
+          </a>
+        </div>
+      </div>
+      <div class="w-full lg:w-[58%] order-1 lg:order-2">
+        <img src="images/banner.png" class="w-full" alt="" />
+      </div>
+    </section>
+    <!-- hero ends here  -->
+
+    <!-- 1st Card section start here  -->
+    <section class="container 2xl:px-16 px-5 lg:py-16 py-10">
+      <h2 class="text-white xl:text-5xl 3xl:text-6xl lg:text-5xl md:text-4xl text-3xl text-center font-medium">
+        Какво е Pratimi и как работи?
+      </h2>
+      <!-- card items start here  -->
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 lg:pt-16 pt-10">
+        <!-- item 1  -->
+        <div class="serviceCard">
+          <div class=" border border-landing-800 rounded-lg imgContainer">
+            <img src="images/cardImg/1.svg" class=" mx-auto  w-full" alt="img" />
+          </div>
+          <div class="3xl:pt-8 md:pt-6 pt-4 3xl:pr-12 xl:pr-5">
+            <h3
+              class="md:text-start text-center text-white 3xl:text-[32px] 3xl:leading-10 md:text-2xl text-xl font-medium 3xl:pb-6 md:pb-4 pb-2">
+              Клиентите ви изпращат документи по имейл
+            </h3>
+            <p class="text-landing-300 3xl:text-xl text-base font-normal md:text-start text-center">
+              ...Получавате @pratimi.com имейл, без необходимост да давате
+              достъп до Вашата кутия.
+            </p>
+          </div>
+        </div>
+        <!-- item 2  -->
+        <div class="serviceCard">
+          <div class=" border border-landing-800 rounded-lg imgContainer">
+            <img src="images/cardImg/2.svg" class=" mx-auto  w-full" alt="" />
+          </div>
+          <div class="3xl:pt-8 md:pt-6 pt-4 3xl:pr-12 xl:pr-5">
+            <h3
+              class="md:text-start text-center text-white 3xl:text-[32px] 3xl:leading-10 md:text-2xl text-xl font-medium 3xl:pb-6 md:pb-4 pb-2">
+              ...или чрез интерактивният ни Viber чатбот.
+            </h3>
+            <p class="text-landing-300 3xl:text-xl text-base font-normal md:text-start text-center">
+              Без необходимост клиентите ви да теглят допълнителни приложения!
+            </p>
+          </div>
+        </div>
+        <!-- item 3  -->
+        <div class="serviceCard">
+          <div class=" border border-landing-800 rounded-lg imgContainer">
+            <img src="images/cardImg/3.svg" class=" mx-auto  w-full" alt="" />
+          </div>
+          <!-- <img src="images/cardImg/c3.svg" class="border border-landing-800 rounded-lg" alt="" /> -->
+          <div class="3xl:pt-8 md:pt-6 pt-4 3xl:pr-12 xl:pr-5">
+            <h3
+              class="md:text-start text-center text-white 3xl:text-[32px] 3xl:leading-10 md:text-2xl text-xl font-medium 3xl:pb-6 md:pb-4 pb-2">
+              Pratimi категоризира получените документи и ви ги изпраща в
+              Google Drive
+            </h3>
+            <p class="text-landing-300 3xl:text-xl text-base font-normal md:text-start text-center">
+              Подредени така, както ви трябват - по фирми, разходи, приходи,
+              банкови извлечения, заплати.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 1st Card section end here  -->
+
+    <!-- 2nd Card section start here  -->
+    <section class="container 2xl:px-16 px-5 lg:py-16 py-10">
+      <h2 class="text-white xl:text-5xl 3xl:text-6xl lg:text-5xl md:text-4xl text-3xl text-center font-medium">
+        Без досадни напомняния
+      </h2>
+      <!-- card items start here  -->
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 lg:pt-16 pt-10">
+        <!-- item 1  -->
+        <div class="serviceCard">
+          <div class=" border border-landing-800 rounded-lg imgContainer">
+            <img src="images/cardImg/4.svg" class=" mx-auto  w-full" alt="" />
+          </div>
+          <div class="3xl:pt-8 md:pt-6 pt-4 3xl:pr-12 xl:pr-5">
+            <h3
+              class="md:text-start text-center text-white 3xl:text-[32px] 3xl:leading-10 md:text-2xl text-xl font-medium 3xl:pb-6 md:pb-4 pb-2">
+              Дефинирате изискуемите документи за всяка фирма
+            </h3>
+            <p class="text-landing-300 3xl:text-xl text-base font-normal md:text-start text-center">
+              ...Получавате @pratimi.com имейл, без необходимост да давате
+              достъп до Вашата кутия.
+            </p>
+          </div>
+        </div>
+        <!-- item 2  -->
+        <div class="serviceCard">
+          <div class=" border border-landing-800 rounded-lg imgContainer">
+            <img src="images/cardImg/5.svg" class=" mx-auto  w-full" alt="" />
+          </div>
+          <div class="3xl:pt-8 md:pt-6 pt-4 3xl:pr-12 xl:pr-5">
+            <h3
+              class="md:text-start text-center text-white 3xl:text-[32px] 3xl:leading-10 md:text-2xl text-xl font-medium 3xl:pb-6 md:pb-4 pb-2">
+              ...и клиентите ви получават автоматични напомняния
+            </h3>
+            <p class="text-landing-300 3xl:text-xl text-base font-normal md:text-start text-center">
+              ...Получавате @pratimi.com имейл, без необходимост да давате
+              достъп до Вашата кутия.
+            </p>
+          </div>
+        </div>
+        <!-- item 3  -->
+        <div class="serviceCard">
+          <div class=" border border-landing-800 rounded-lg imgContainer">
+            <img src="images/cardImg/6.svg" class=" mx-auto  w-full" alt="" />
+          </div>
+          <div class="3xl:pt-8 md:pt-6 pt-4 3xl:pr-12 xl:pr-5">
+            <h3
+              class="md:text-start text-center text-white 3xl:text-[32px] 3xl:leading-10 md:text-2xl text-xl font-medium 3xl:pb-6 md:pb-4 pb-2">
+              ...докато не изпратят всичко необходимо
+            </h3>
+            <p class="text-landing-300 3xl:text-xl text-base font-normal md:text-start text-center">
+              ...Получавате @pratimi.com имейл, без необходимост да давате
+              достъп до Вашата кутия.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 2nd Card section end here  -->
+
+    <!-- Security section start here  -->
+    <section class="container 2xl:px-16 px-5 lg:py-16 py-10">
+      <div
+        class="security grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-8 3xl:px-28 xl:px-20 lg:px-10 px-5 3xl:py-28 lg:py-16 py-10 rounded-lg">
+        <div>
+          <h2
+            class="3xl:text-6xl lg:text-5xl md:text-4xl text-3xl font-medium text-white md:text-start text-center 2xl:w-[500px] xl:w-full">
+            С внимание към Вашите лични документи
+          </h2>
+        </div>
+        <div class="3xl:space-y-8 lg:space-y-6 md:space-y-5 space-y-3">
+          <div class="flex md:justify-start justify-center">
+            <img src="images/device-database-encryption-1.svg" class="w-16" alt="" />
+          </div>
+          <div class="lg:spcae-y-5 md:space-y-4 space-y-2">
+            <h3 class="text-white font-medium 3xl:text-4xl lg:text-4xl md:text-3xl text-2xl md:text-start text-center">
+              Сигурност
+            </h3>
+            <p
+              class="text-landing-300 font-normal 3xl:text-2xl lg:text-xl md:text-lg text-base md:text-start text-center">
+              Pratimi използва най-модерните принципи и похвати, за да е
+              сигурно, че Вашите документи си остават Ваши.
+            </p>
+          </div>
+        </div>
+        <div class="3xl:space-y-8 lg:space-y-6 md:space-y-5 space-y-3">
+          <div class="flex md:justify-start justify-center">
+            <img src="images/shield-tick.svg" class="w-16" alt="" />
+          </div>
+          <div class="lg:spcae-y-5 md:space-y-4 space-y-2">
+            <h3 class="text-white font-medium 3xl:text-4xl lg:text-4xl md:text-3xl text-2xl md:text-start text-center">
+              Ясни права за ползване
+            </h3>
+            <p
+              class="text-landing-300 font-normal 3xl:text-2xl lg:text-xl md:text-lg text-base md:text-start text-center">
+              Без ситен шрифт - Pratimi никога няма да продаде данните Ви на
+              трети лица.
+            </p>
+          </div>
+        </div>
+        <div class="3xl:space-y-8 lg:space-y-6 md:space-y-5 space-y-3">
+          <div class="flex md:justify-start justify-center">
+            <img src="images/recycle-bin-2--remove-delete-empty-bin-trash-garbage.svg" class="w-16" alt="" />
+          </div>
+          <div class="lg:spcae-y-5 md:space-y-4 space-y-2">
+            <h3 class="text-white font-medium 3xl:text-4xl lg:text-4xl md:text-3xl text-2xl md:text-start text-center">
+              Автоматично изтриване
+            </h3>
+            <p
+              class="text-landing-300 font-normal 3xl:text-2xl lg:text-xl md:text-lg text-base md:text-start text-center">
+              За най-взискателните Ви клиенти, предоставяме опцията файловете
+              им автоматично да бъдат изтривани, след като пристигнат при Вас.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Security section end here  -->
+
+    <!-- Email Viber section start here  -->
+    <section class="container 2xl:px-16 px-5 lg:py-16 py-10">
+      <h2 class="text-white xl:text-5xl 3xl:text-6xl lg:text-5xl md:text-4xl text-3xl text-center font-medium">
+        Без досадни напомняния
+      </h2>
+      <p class="text-center font-normal lg:text-2xl md:text-lg text-base text-landing-300 lg:pt-5 pt-3">
+        Pratimi се интегрира с каналите за комуникация, които вече използвате
+      </p>
+      <!-- card items start here  -->
+      <div class="grid md:grid-cols-2 grid-cols-1 gap-8 lg:pt-16 pt-10">
+        <!-- item 1  -->
+        <div
+          class="flex flex-col items-center border rounded-lg shadow lg:flex-row border-gray-700 w-full hover:bg-gradient-to-b from-[#3148721c] to-landing-900 transition-all">
+          <div class="lg:w-1/2 w-full pt-10">
+            <img class="lg:w-full w-96 mx-auto rounded-t-lg h-auto " src="images/email2.svg" alt="" />
+          </div>
+          <div class="flex flex-col justify-between p-6 leading-normal lg:w-1/2 w-full lg:text-start text-center">
+            <h5 class="3xl:mb-5 lg:mb-3 mb-2 xl:text-4xl text-2xl font-medium tracking-tight text-white">
+              Email
+            </h5>
+            <p class="mb-3 font-normal text-landing-300 3xl:leading-9 3xl:text-2xl lg:text-lg text-base">
+              Получавате @pratimi.com имейл, на който можете да получавате
+              файлове. Pratimi автоматично отговаря на всеки имейл, както и
+              събира и категоризира файловете.
+            </p>
+          </div>
+        </div>
+        <!-- item 2  -->
+
+        <div
+          class="flex flex-col items-center border rounded-lg shadow lg:flex-row border-gray-700 w-ful hover:bg-gradient-to-b from-[#3148721c] to-landing-900 transition-all">
+          <div class="lg:w-1/2 w-full ">
+            <img class=" lg:w-full w-96 mx-auto rounded-t-lg h-auto" src="images/viber2.svg" alt="" />
+          </div>
+          <div class="flex flex-col justify-between p-6 leading-normal lg:w-1/2 w-full lg:text-start text-center">
+            <h5 class="3xl:mb-5 lg:mb-3 mb-2 xl:text-4xl text-2xl font-medium tracking-tight text-white">
+              Viber
+            </h5>
+            <p class="mb-3 font-normal text-landing-300 3xl:leading-9 3xl:text-2xl lg:text-lg text-base">
+              Интерактивен чатбот, на който клиентите Ви изпращат снимки и
+              документи. Вие само получавате известия, без нужда от директна
+              комуникация.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Email Viber section end here  -->
+
+    <!-- Accordion Section start here  -->
+    <section class="container 2xl:px-16 px-5 lg:py-16 py-10">
+      <h2
+        class="text-white xl:text-5xl 3xl:text-6xl lg:text-5xl md:text-4xl text-3xl text-center font-medium max-w-5xl mx-auto">
+        По-малко бумащина, повече време за Вашия бизнес
+      </h2>
+
+      <!-- 1st faq section  -->
+      <div class="flex lg:flex-row flex-col justify-between gap-8 3xl:pt-20 lg:pt-16 pt-10">
+        <div class="lg:w-[30%] w-full lg:space-y-8 space-y-5">
+          <h2 class="text-white font-medium 2xl:text-5xl lg:text-4xl text-2xl">
+            Предимствата за Вас като счетоводител
+          </h2>
+          <p class="text-landing-300 font-normal 3xl:text-2xl xl:text-xl lg:text-lg text-base">
+            Лорем ипсум. Изисквате документи всеки месец? Автоматичните
+            напомняния ще се погрижат никой да не изтърва краен срок.
+          </p>
+        </div>
+
+        <div class="lg:w-[56%] w-full">
+          <!-- Faq items start here  -->
+          <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-gray-900 text-white"
+            data-inactive-classes="text-gray-400">
+            <!-- item start here  -->
+            <h2 id="accordion-flush-heading-1">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium text-white border-b border-landing-700 2xl:text-4xl lg:text-2xl text-xl gap-3"
+                data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
+                aria-controls="accordion-flush-body-1">
+                <span class="flex items-center 3xl:gap-8 gap-5"><img src="images/icons/icon1.svg"
+                    class="w-12 h-12 object-cover xl:w-16 xl:h-16" alt="" />
+                  <span class="text-start">Автоматизирани напомняния</span></span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+            <h2 id="accordion-flush-heading-2">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium border-b border-landing-700 text-white gap-3 2xl:text-4xl lg:text-2xl text-xl"
+                data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
+                aria-controls="accordion-flush-body-2">
+                <span class="flex items-center 3xl:gap-8 gap-5"><img src="images/icons/icon2.svg"
+                    class="w-12 h-12 object-cover xl:w-16 xl:h-16" alt="" />
+                  <span class="text-start">Автоматична категоризация</span></span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+            <h2 id="accordion-flush-heading-3">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium border-b border-landing-700 text-white gap-3 2xl:text-4xl lg:text-2xl text-xl"
+                data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
+                aria-controls="accordion-flush-body-3">
+                <span class="flex items-center 3xl:gap-8 gap-5"><img src="images/icons/icon3.svg"
+                    class="w-12 h-12 object-cover xl:w-16 xl:h-16" alt="" />
+                  <span class="text-start">Интерактивен чатбот</span></span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+            <h2 id="accordion-flush-heading-4">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium border-b border-landing-700 text-white gap-3 2xl:text-4xl lg:text-2xl text-xl"
+                data-accordion-target="#accordion-flush-body-4" aria-expanded="false"
+                aria-controls="accordion-flush-body-4">
+                <span class="flex items-center justify-start 3xl:gap-8 gap-5"><img src="images/icons/icon4.svg"
+                    class="w-12 h-12 object-cover xl:w-16 xl:h-16" alt="" />
+                  <span class="text-start">Aвтоматично разчитане на български и чуждестранни
+                    документи (OCR)</span></span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+            <h2 id="accordion-flush-heading-5">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium border-b border-landing-700 text-white gap-3 2xl:text-4xl lg:text-2xl text-xl"
+                data-accordion-target="#accordion-flush-body-5" aria-expanded="false"
+                aria-controls="accordion-flush-body-5">
+                <span class="flex items-center justify-start 3xl:gap-8 gap-5"><img src="images/icons/icon5.svg"
+                    class="w-12 h-12 object-cover xl:w-16 xl:h-16" alt="" />
+                  <span class="text-start">Синхронизация с Google Drive</span></span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+            <h2 id="accordion-flush-heading-6">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium border-b border-landing-700 text-white gap-3 2xl:text-4xl lg:text-2xl text-xl"
+                data-accordion-target="#accordion-flush-body-6" aria-expanded="false"
+                aria-controls="accordion-flush-body-6">
+                <span class="flex items-center justify-start 3xl:gap-8 gap-5"><img src="images/icons/icon6.svg"
+                    class="w-12 h-12 object-cover xl:w-16 xl:h-16" alt="" />
+                  <span class="text-start">Лесно търсене</span></span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-6" class="hidden" aria-labelledby="accordion-flush-heading-6">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+            <h2 id="accordion-flush-heading-7">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium border-b border-landing-700 text-white gap-3 2xl:text-4xl lg:text-2xl text-xl"
+                data-accordion-target="#accordion-flush-body-7" aria-expanded="false"
+                aria-controls="accordion-flush-body-7">
+                <span class="flex items-center justify-start 3xl:gap-8 gap-5"><img src="images/icons/icon7.svg"
+                    class="w-12 h-12 object-cover xl:w-16 xl:h-16" alt="" />
+                  <span class="text-start">Печелите доверието на клиентите си</span></span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-7" class="hidden" aria-labelledby="accordion-flush-heading-7">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+            <h2 id="accordion-flush-heading-8">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium border-b border-landing-700 text-white gap-3 2xl:text-4xl lg:text-2xl text-xl"
+                data-accordion-target="#accordion-flush-body-8" aria-expanded="false"
+                aria-controls="accordion-flush-body-8">
+                <span class="flex items-center justify-start 3xl:gap-8 gap-5"><img src="images/icons/icon8.svg"
+                    class="w-12 h-12 object-cover xl:w-16 xl:h-16" alt="" />
+                  <span class="text-start">Без необходимост от хартия</span></span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-8" class="hidden" aria-labelledby="accordion-flush-heading-8">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+          </div>
+          <!-- Faq items end here  -->
+        </div>
+      </div>
+
+      <!--2nd faq section  -->
+      <div class="flex lg:flex-row flex-col justify-between gap-8 3xl:pt-20 lg:pt-16 pt-10">
+        <div class="lg:w-[30%] w-full lg:space-y-8 space-y-5">
+          <h2 class="text-white font-medium 2xl:text-5xl lg:text-4xl text-2xl">
+            Предимствата за Вашите клиенти
+          </h2>
+          <p class="text-landing-300 font-normal 3xl:text-2xl xl:text-xl lg:text-lg text-base">
+            Лорем ипсум. Изисквате документи всеки месец? Автоматичните
+            напомняния ще се погрижат никой да не изтърва краен срок.
+          </p>
+        </div>
+
+        <div class="lg:w-[56%] w-full">
+          <!-- Faq items start here  -->
+          <div id="accordion-flush-1" data-accordion="collapse" data-active-classes="bg-gray-900 text-white"
+            data-inactive-classes="text-gray-400">
+            <!-- item start here  -->
+            <h2 id="accordion-flush-heading-9">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium text-white border-b border-landing-700 2xl:text-4xl lg:text-2xl text-xl gap-3"
+                data-accordion-target="#accordion-flush-body-9" aria-expanded="true"
+                aria-controls="accordion-flush-body-9">
+                <span class="flex items-center 3xl:gap-8 gap-5"><img src="images/icons/icon9.svg"
+                    class="w-12 h-12 object-cover xl:w-16 xl:h-16" alt="" />
+                  <span class="text-start">Моментален достъп до всички документи</span></span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-9" class="hidden" aria-labelledby="accordion-flush-heading-9">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+            <h2 id="accordion-flush-heading-10">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium border-b border-landing-700 text-white gap-3 2xl:text-4xl lg:text-2xl text-xl"
+                data-accordion-target="#accordion-flush-body-10" aria-expanded="false"
+                aria-controls="accordion-flush-body-10">
+                <span class="flex items-center 3xl:gap-8 gap-5"><img src="images/icons/icon10.svg"
+                    class="w-12 h-12 object-cover xl:w-16 xl:h-16" alt="" />
+                  <span class="text-start">Никога не пропускайте краен срок</span></span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-10" class="hidden" aria-labelledby="accordion-flush-heading-10">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+            <h2 id="accordion-flush-heading-11">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium border-b border-landing-700 text-white gap-3 2xl:text-4xl lg:text-2xl text-xl"
+                data-accordion-target="#accordion-flush-body-11" aria-expanded="false"
+                aria-controls="accordion-flush-body-11">
+                <span class="flex items-center 3xl:gap-8 gap-5"><img src="images/icons/icon11.svg"
+                    class="w-12 h-12 object-cover xl:w-16 xl:h-16" alt="" />
+                  <span class="text-start">Сигурност</span></span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-11" class="hidden" aria-labelledby="accordion-flush-heading-11">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+            <h2 id="accordion-flush-heading-12">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium border-b border-landing-700 text-white gap-3 2xl:text-4xl lg:text-2xl text-xl"
+                data-accordion-target="#accordion-flush-body-12" aria-expanded="false"
+                aria-controls="accordion-flush-body-12">
+                <span class="flex items-center justify-start 3xl:gap-8 gap-5"><img src="images/icons/icon12.svg"
+                    class="w-12 h-12 object-cover xl:w-16 xl:h-16" alt="" />
+                  <span class="text-start">Ясен поглед върху наличните документи при
+                    счетоводителя</span></span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-12" class="hidden" aria-labelledby="accordion-flush-heading-12">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+            <h2 id="accordion-flush-heading-13">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium border-b border-landing-700 text-white gap-3 2xl:text-4xl lg:text-2xl text-xl"
+                data-accordion-target="#accordion-flush-body-13" aria-expanded="false"
+                aria-controls="accordion-flush-body-13">
+                <span class="flex items-center justify-start 3xl:gap-8 gap-5"><img src="images/icons/icon13.svg"
+                    class="w-12 h-12 object-cover xl:w-16 xl:h-16" alt="" />
+                  <span class="text-start">Възможност на служителите да изпращат документи към
+                    счетоводството</span></span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-13" class="hidden" aria-labelledby="accordion-flush-heading-13">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+          </div>
+          <!-- Faq items end here  -->
+        </div>
+      </div>
+    </section>
+    <!-- Accordion Section end here  -->
+
+    <!-- Feature section start here  -->
+    <section class="container bg-landing-800 2xl:px-16 px-5 lg:py-16 py-10">
+      <div class="max-w-5xl mx-auto">
+        <h2
+          class="text-white xl:text-5xl 3xl:text-6xl lg:text-5xl md:text-4xl text-3xl text-center font-medium mx-auto">
+          Какво казват клиентите ни за нас
+        </h2>
+        <p class="text-center font-normal lg:text-2xl md:text-lg text-base text-landing-300 lg:pt-5 pt-3">
+          Explore the whole collection of open-source web components and
+          elements built with the utility classes from Tailwind
+        </p>
+      </div>
+      <!-- cards start here  -->
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-8 lg:pt-16 pt-10 xl:items-start">
+        <!-- card item start -->
+        <div
+          class="bg-landing-900 lg:p-10 md:p-8 p-5 rounded-lg text-white lg:space-y-8 space-y-5 hover:bg-[#11192896] transition-all">
+          <h3 class="font-medium lg:text-3xl text-2xl max-w-[440px]">
+            Solid foundation for any project
+          </h3>
+          <p class="text-landing-200 lg:text-xl text-base">
+            "This is a very complex and beautiful set of elements. Under the
+            hood it comes with the best things from 2 different worlds: Figma
+            and Tailwind."
+          </p>
+          <div>
+            <h4 class="lg:text-2xl text-xl mb-1">Bonnie Green</h4>
+            <p class="text-landing-300 lg:text-xl text-base">
+              Web developer @themesberg
+            </p>
+          </div>
+        </div>
+        <!-- card item start -->
+        <div
+          class="bg-landing-900 lg:p-10 md:p-8 p-5 rounded-lg text-white lg:space-y-8 space-y-5 hover:bg-[#11192896] transition-all">
+          <h3 class="font-medium lg:text-3xl text-2xl max-w-[440px]">
+            Advanced features for designers
+          </h3>
+          <p class="text-landing-200 lg:text-xl text-base">
+            "FlowBite provides a robust set of design tokens and components
+            based on the popular Tailwind CSS framework. From the most used UI
+            components like forms and navigation bars to the whole app screens
+            designed both for desktop and mobile, this UI kit provides a solid
+            foundation for any project."
+          </p>
+          <div>
+            <h4 class="lg:text-2xl text-xl mb-1">Micheal Gough</h4>
+            <p class="text-landing-300 lg:text-xl text-base">
+              Web developer @themesberg
+            </p>
+          </div>
+        </div>
+        <!-- card item start -->
+        <div
+          class="bg-landing-900 lg:p-10 md:p-8 p-5 rounded-lg text-white lg:space-y-8 space-y-5 hover:bg-[#11192896] transition-all">
+          <h3 class="font-medium lg:text-3xl text-2xl max-w-[440px]">
+            Mindblowing workflow and variants
+          </h3>
+          <p class="text-landing-200 lg:text-xl text-base">
+            "This is a very complex and beautiful set of elements. Under the
+            hood it comes with the best things from 2 different worlds: Figma
+            and Tailwind."
+          </p>
+          <div>
+            <h4 class="lg:text-2xl text-xl mb-1">Joseph McFall</h4>
+            <p class="text-landing-300 lg:text-xl text-base">
+              Web developer @themesberg
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Feature section end here  -->
+    <!-- Pricing section start here  -->
+    <section
+      class="container 3xl:px-56 2xl:px-44 lg:px-32 px-5 2xl:py-36 lg:py-20 py-16 flex flex-col lg:flex-row items-center justify-between gap-14">
+      <div class="lg:w-1/2 w-full">
+        <h2 class="text-white font-medium 3xl:text-6xl lg:text-5xl md:text-4xl text-3xl">
+          Възползвайте се от Pratimi в ранен етап на развитие
+        </h2>
+        <p class="font-normal lg:text-2xl md:text-lg text-base text-landing-300 lg:py-6 py-4">
+          Always know what you’ll pay. Възползвайте се от Pratimi в ранен етап
+          на развитие.
+        </p>
+        <ul class="text-landing-300 3xl:text-xl lg:text-lg text-base font-normal space-y-3">
+          <li class="flex items-center gap-3">
+            <img src="images/check.svg" alt="" /><span>Customer Journey Builder</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="images/check.svg" alt="" /><span>Marketing CRM</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="images/check.svg" alt="" /><span>Custom Templates</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="images/check.svg" alt="" /><span>Creative Assistant</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="images/check.svg" alt="" /><span>Multivariate Testing</span>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-landing-800 w-full lg:w-1/2 rounded-lg 3xl:p-16 xl:p-12 md:p-10 p-8 relative">
+        <div class="bg-[#233876] border border-[#1A56DB] rounded-lg py-2 px-10 absolute" id="discount">
+          <h4 class="text-white font-medium 3xl:text-5xl lg:text-4xl md:text-3xl text-2xl">
+            -80%
+          </h4>
+        </div>
+        <div class="text-center 3xl:py-16 xl:py-12 md:py-10 py-8">
+          <h3 class="text-landing-100 font-normal 3xl:text-5xl lg:text-4xl text-3xl">
+            ХXХ лв.
+          </h3>
+          <div class="lg:py-10 py-8">
+            <h2 class="text-white 3xl:text-8xl lg:text-6xl text-5xl">
+              ХХ лв.
+            </h2>
+            <p class="font-normal lg:text-2xl md:text-lg text-base text-landing-200 pt-2">
+              на месец
+            </p>
+          </div>
+          <div class="inline-block">
+            <a href="#"
+              class="text-white focus:outline-none font-medium rounded-lg 3xl:text-2xl xl:text-lg text-sm md:px-5 py-3 px-3 text-center bg-blue-600 hover:bg-blue-700 flex items-center gap-2 transition-all">
+              <span>Заяви покана </span><img src="images/arrow-right-outline.svg" class="w-4" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pricing ends here  -->
+
+    <!-- NewsLetter Start here  -->
+    <section class="container 2xl:px-16 px-5 lg:py-16 py-10">
+      <div class="cta 3xl:px-28 xl:px-20 lg:px-10 px-5 3xl:py-28 lg:py-16 py-10 rounded-lg">
+        <div class="3xl:w-[55%] lg:w-2/3 w-full">
+          <div>
+            <h2 class="3xl:text-6xl lg:text-5xl md:text-4xl text-3xl font-medium text-white md:text-start text-center">
+              С внимание към Вашите лични документи
+            </h2>
+            <p
+              class="md:text-start text-center font-normal lg:text-2xl md:text-lg text-base text-landing-300 lg:pt-5 pt-3">
+              Въведете данните си за контакт във формата отдолу и в кратък
+              срок ще се свържем с Вас, за да Ви запознаем с платформата
+              отблизо.
+            </p>
+          </div>
+          <form
+            class="xl:max-w-[683px] w-full flex items-center justify-between md:gap-5 gap-3 2xl:pt-12 md:pt-10 pt-8">
+            <input type="text"
+              class="text-sm rounded-lg focus:outline-none focus:border-white block p-2.5 bg-white bg-opacity-10 border-white placeholder-white text-white px-5 md:py-4 py-3 md:w-[458px] w-[60%]"
+              placeholder="Твоят имейл/телефон" />
+            <input type="submit"
+              class="rounded-lg focus:outline-none focus:border-white block p-2.5 bg-white hover:bg-[#ffffff83] hover:text-white border-white text-landing-900 md:text-xl text-base md:px-5 px-2 md:py-[14px] py-3 md:w-[203px] w-[40%] cursor-pointer transition-all"
+              value="Заяви покана" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- NewsLetter end here  -->
+
+    <!--Bottom Faq Start here  -->
+    <section class="container 2xl:px-16 px-5 lg:py-16 py-10">
+      <!--2nd faq section  -->
+      <div class="flex lg:flex-row flex-col justify-between gap-8">
+        <div class="lg:w-[30%] w-full">
+          <h2 class="text-white font-medium 2xl:text-5xl lg:text-4xl text-2xl">
+            Предимствата за Вашите клиенти
+          </h2>
+        </div>
+
+        <div class="lg:w-[56%] w-full">
+          <!-- Faq items start here  -->
+          <div id="accordion-flush-2" data-accordion="collapse" data-active-classes="bg-gray-900 text-white"
+            data-inactive-classes="text-gray-400">
+            <!-- item start here  -->
+            <h2 id="accordion-flush-heading-14">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium text-white border-b border-landing-700 2xl:text-3xl lg:text-2xl text-xl gap-3"
+                data-accordion-target="#accordion-flush-body-14" aria-expanded="true"
+                aria-controls="accordion-flush-body-14">
+                <span class="text-start">Не изисква ли НАП всичките ми документи да са на хартия?</span></span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-14" class="hidden" aria-labelledby="accordion-flush-heading-1">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Не! Хартията отдавна е отживелица! Единственото, което изисква НАП, е да имате ясно отчетливи снимки
+                  или сканирани копия на документите си.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+            <h2 id="accordion-flush-heading-15">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium border-b border-landing-700 text-white gap-3 2xl:text-3xl lg:text-2xl text-xl"
+                data-accordion-target="#accordion-flush-body-15" aria-expanded="false"
+                aria-controls="accordion-flush-body-15">
+                <span class="text-start">Мога ли да използвам Pratimi от телефон?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-15" class="hidden" aria-labelledby="accordion-flush-heading-15">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+            <h2 id="accordion-flush-heading-16">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium border-b border-landing-700 text-white gap-3 2xl:text-3xl lg:text-2xl text-xl"
+                data-accordion-target="#accordion-flush-body-16" aria-expanded="false"
+                aria-controls="accordion-flush-body-16">
+                <span class="text-start">Мога ли да поддържам свой архив от документи?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-16" class="hidden" aria-labelledby="accordion-flush-heading-16">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+            <h2 id="accordion-flush-heading-17">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium border-b border-landing-700 text-white gap-3 2xl:text-3xl lg:text-2xl text-xl"
+                data-accordion-target="#accordion-flush-body-17" aria-expanded="false"
+                aria-controls="accordion-flush-body-17">
+                <span class="text-start">Необходимо ли е да тегля някакви приложения?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-17" class="hidden" aria-labelledby="accordion-flush-heading-17">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Изисквате документи всеки месец? Автоматичните напомняния ще
+                  се погрижат никой да не изтърва краен срок.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+            <h2 id="accordion-flush-heading-18">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 font-medium border-b border-landing-700 text-white gap-3 2xl:text-3xl lg:text-2xl text-xl"
+                data-accordion-target="#accordion-flush-body-18" aria-expanded="false"
+                aria-controls="accordion-flush-body-18">
+                <span class="text-start">Колко време отнема настройката?</span>
+                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+                </svg>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-18" class="hidden" aria-labelledby="accordion-flush-heading-18">
+              <div class="py-5 border-b border-landing-700">
+                <p class="mb-2 text-landing-300 3xl:text-xl lg:text-lg text-base">
+                  Не! Хартията отдавна е отживелица! Единственото, което изисква НАП, е да имате ясно отчетливи снимки
+                  или сканирани копия на документите си.
+                </p>
+              </div>
+            </div>
+            <!-- item end here -->
+
+          </div>
+          <!-- Faq items end here  -->
+        </div>
+      </div>
+    </section>
+    <!--Bottom Faq end here  -->
+
+    <!-- Contact Section start here  -->
+    <section class="contact lg:mt-16 mt-10">
+      <div
+        class="container inner-conatct 2xl:px-16 px-5 lg:py-16 py-10 flex lg:flex-row flex-col lg:justify-between items-center  gap-8">
+        <div class="lg:text-start text-center lg:w-[30%] w-full">
+          <h2 class="text-white 3xl:text-6xl lg:text-5xl md:text-4xl text-3xl font-medium max-w-80 lg:mx-0 mx-auto">
+            Свържете се с нас
+          </h2>
+          <p class="font-normal lg:text-2xl md:text-lg text-base text-landing-300 lg:pt-6 pt-4">
+            Got a technical issue? Want to send feedback about a beta feature?
+            Need details about our Business plan? Let us know.
+          </p>
+        </div>
+        <div class="lg:w-[56%] w-full">
+          <form class="lg:space-y-8 space-y-5">
+            <div>
+              <label for="email" class="block mb-2 xl:text-2xl lg:text-lg text-base font-medium text-white">Твоят
+                имейл</label>
+
+              <input type="email" id="message"
+                class="block p-4 w-full text-sm rounded-lg border focus:border-landing-600 bg-landing-700 border-landing-600 text-white placeholder-landing-400"
+                placeholder="name@gmail.com" />
+            </div>
+            <div>
+              <label for="message"
+                class="block mb-2 xl:text-2xl lg:text-lg text-base font-medium text-white">Съобщение</label>
+              <textarea id="message" rows="4"
+                class="block p-4 w-full text-sm rounded-lg border focus:border-landing-600 bg-landing-700 border-landing-600 text-white"></textarea>
+            </div>
+
+            <div>
+              <button
+                class="text-base lg:text-lg 3xl:text-xl bg-[#1A56DB] hover:bg-[#345292] px-5 py-3 rounded-lg text-white lg:w-auto w-full transition-all">
+                Изпрати
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section end here  -->
+  </main>
+  <!-- Main body ends here  -->
+
+  <!-- Footer start here  -->
+  <footer class="container 2xl:px-16 px-5">
+    <div class="w-full  mx-auto p-4 md:py-8">
+      <div class="flex items-center justify-between flex-wrap gap-2">
+        <a href="/" class="flex items-center mb-0 space-x-3 md:w-[42%] md:justify-start justify-center w-full">
+          <img src="images/favicon.svg" class="h-8" alt="Flowbite Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Pratimi</span>
+        </a>
+        <span class="block 3xl:text-lg text-sm sm:text-center text-gray-400 md:w-1/2 w-full md:text-end text-center">©
+          2024 <a href="/" class="hover:underline transition-all">Pratimi</a>. Всички права запазени.</span>
+      </div>
+
+
+    </div>
+  </footer>
+  <!-- Footer ends here  -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
